@@ -1,20 +1,20 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FullPantalla : MonoBehaviour
 {
-    // cuando pongas un toggle en la escena habre esta funcion para que recoja el toggle
-    //public Toggle _toggle;
+    public Toggle _toggle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     //scrit para hacer que el juego se ponga en pantalla completa en el escritorio
     void Start()
     {
         if (Screen.fullScreen)
         {
-            //_toggle.isOn = true;
+            _toggle.isOn = true;
         }
         else
         {
-            //_toggle.isOn = false;
+            _toggle.isOn = false;
         }
     }
 
